@@ -115,9 +115,9 @@ form.addEventListener('submit', (e) => {
   if (!valid) return;
 
   /*
-    AQUÍ conectarías el envío real:
+    AQUÍ conectaré el envío real:
     1) Formspree / EmailJS / Web3Forms (sin backend), o
-    2) Tu propio backend (PHP, Node o Python) con fetch('/api/contacto', { method: 'POST', body: ... }).
+    2) Mi propio backend (PHP, Node o Python) con fetch('/api/contacto', { method: 'POST', body: ... }).
     Mientras tanto se abre el cliente de correo como solución provisional.
   */
   const subject = encodeURIComponent(`Solicitud de propuesta: ${nombre.value}`);

@@ -1,9 +1,3 @@
-/* =========================================================
-   CREACTIVA · estilos
-   ---------------------------------------------------------
-   COLORES: cambia solo este bloque :root y toda la web se actualiza.
-   (Pon aquí los hex exactos de tu marca: están marcados con "MARCA")
-   ========================================================= */
 :root {
   --bg: #0a0f1e;          /* MARCA · fondo principal oscuro */
   --bg-alt: #101730;      /* MARCA · fondo de secciones alternas */
