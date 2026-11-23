@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 900" width="600" height="900" role="img" aria-label="Ilustración de estrategia digital: megáfono, engranajes, embudo de conversión y gráfica de crecimiento">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#151d3a"/>
+      <stop offset="1" stop-color="#0b1128"/>
+    </linearGradient>
+    <linearGradient id="gMain" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2ee6c5"/>
+      <stop offset="1" stop-color="#4f7cff"/>
+    </linearGradient>
+    <linearGradient id="gPink" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff4d9a"/>
+      <stop offset="1" stop-color="#8a3dff"/>
+    </linearGradient>
+    <linearGradient id="gBar" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#4f7cff"/>
+      <stop offset="1" stop-color="#2ee6c5"/>
+    </linearGradient>
+    <linearGradient id="gF1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4f7cff" stop-opacity=".95"/>
+      <stop offset="1" stop-color="#6a8bff" stop-opacity=".95"/>
+    </linearGradient>
+    <linearGradient id="gF2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3aa8f0"/>
+      <stop offset="1" stop-color="#4f7cff"/>
+    </linearGradient>
+    <linearGradient id="gF3" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2ee6c5"/>
+      <stop offset="1" stop-color="#3aa8f0"/>
+    </linearGradient>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="45"/></filter>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="6"/></filter>
+
+    <!-- Engranaje reutilizable -->
+    <g id="gear">
+      <g fill="url(#gMain)">
+        <rect x="-9" y="-58" width="18" height="22" rx="4"/>
+        <rect x="-9" y="-58" width="18" height="22" rx="4" transform="rotate(45)"/>
+        <rect x="-9" y="-58" width="18" height="22" rx="4" transform="rotate(90)"/>
+        <rect x="-9" y="-58" width="18" height="22" rx="4" transform="rotate(135)"/>
+        <rect x="-9" y="-58" width="18" height="22" rx="4" transform="rotate(180)"/>
+        <rect x="-9" y="-58" width="18" height="22" rx="4" transform="rotate(225)"/>
+        <rect x="-9" y="-58" width="18" height="22" rx="4" transform="rotate(270)"/>
+        <rect x="-9" y="-58" width="18" height="22" rx="4" transform="rotate(315)"/>
+        <circle r="46"/>
+      </g>
+      <circle r="20" fill="#0b1128"/>
+      <circle r="9" fill="none" stroke="#2ee6c5" stroke-width="3"/>
+    </g>
+  </defs>
+
+  <!-- Tarjeta de fondo -->
+  <rect width="600" height="900" rx="32" fill="url(#bg)"/>
+  <circle cx="120" cy="140" r="150" fill="#2ee6c5" opacity=".16" filter="url(#blur)"/>
+  <circle cx="500" cy="760" r="170" fill="#4f7cff" opacity=".22" filter="url(#blur)"/>
+  <circle cx="470" cy="330" r="110" fill="#8a3dff" opacity=".16" filter="url(#blur)"/>
+
+  <!-- Puntos decorativos -->
+  <g fill="#ffffff" opacity=".18">
+    <circle cx="40" cy="60" r="2.5"/><circle cx="560" cy="48" r="2"/><circle cx="30" cy="360" r="2"/>
+    <circle cx="572" cy="400" r="2.5"/><circle cx="46" cy="640" r="2"/><circle cx="560" cy="620" r="2"/>
+  </g>
+
+  <!-- ===== ZONA SUPERIOR: engranajes + megáfono ===== -->
+  <circle cx="135" cy="125" r="105" fill="none" stroke="#2ee6c5" stroke-width="1.5" stroke-dasharray="4 8" opacity=".5"/>
+  <use href="#gear" transform="translate(110 130) scale(1.25)"/>
+  <use href="#gear" transform="translate(220 78) scale(.62)"/>
+
+  <g transform="translate(330 175) rotate(-16)">
+    <!-- ondas de sonido -->
+    <g fill="none" stroke="#2ee6c5" stroke-width="5" stroke-linecap="round">
+      <path d="M150 -38 Q175 0 150 38" opacity=".95"/>
+      <path d="M172 -62 Q210 0 172 62" opacity=".65"/>
+      <path d="M194 -86 Q245 0 194 86" opacity=".35"/>
+    </g>
+    <!-- asa -->
+    <rect x="-18" y="22" width="22" height="46" rx="8" fill="#4f7cff"/>
+    <!-- cuerpo trasero -->
+    <rect x="-52" y="-28" width="52" height="56" rx="12" fill="#4f7cff"/>
+    <rect x="-40" y="-16" width="14" height="32" rx="5" fill="#0b1128" opacity=".35"/>
+    <!-- cono -->
+    <path d="M-2 -30 L120 -76 L120 76 L-2 30 Z" fill="url(#gPink)"/>
+    <path d="M10 -20 L110 -58" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".45"/>
+    <!-- boca -->
+    <ellipse cx="120" cy="0" rx="16" ry="76" fill="#ff4d9a"/>
+    <ellipse cx="120" cy="0" rx="9" ry="60" fill="#0b1128" opacity=".55"/>
+  </g>
+
+  <!-- burbujas sociales -->
+  <g>
+    <circle cx="78" cy="300" r="30" fill="url(#gPink)"/>
+    <circle cx="78" cy="292" r="8" fill="#fff"/>
+    <path d="M62 316 Q78 298 94 316 Z" fill="#fff"/>
+
+    <circle cx="300" cy="318" r="26" fill="url(#gMain)"/>
+    <path d="M293 306 L293 330 L313 318 Z" fill="#0b1128"/>
+
+    <circle cx="530" cy="300" r="32" fill="#ff4d9a"/>
+    <path transform="translate(530 302) scale(1.35)" d="M0 10 C-18 -4 -12 -18 0 -8 C12 -18 18 -4 0 10 Z" fill="#fff"/>
+  </g>
+
+  <!-- ===== ZONA MEDIA: embudo ===== -->
+  <!-- visitas cayendo -->
+  <g fill="#fff" opacity=".7">
+    <circle cx="150" cy="372" r="4"/><circle cx="215" cy="360" r="3"/><circle cx="260" cy="376" r="4"/>
+    <circle cx="340" cy="362" r="3"/><circle cx="395" cy="374" r="4"/><circle cx="450" cy="362" r="3"/>
+  </g>
+  <path d="M70 395 L530 395 L488 462 L112 462 Z" fill="url(#gF1)"/>
+  <path d="M112 476 L488 476 L446 543 L154 543 Z" fill="url(#gF2)"/>
+  <path d="M154 557 L446 557 L404 624 L196 624 Z" fill="url(#gF3)"/>
+  <g font-family="Poppins, Arial, Helvetica, sans-serif" font-weight="600" font-size="18" fill="#fff" text-anchor="middle">
+    <text x="300" y="436">Visitas</text>
+    <text x="300" y="517">Oportunidades</text>
+    <text x="300" y="598" fill="#06101f">Clientes</text>
+  </g>
+  <!-- salida del embudo -->
+  <rect x="284" y="624" width="32" height="26" rx="6" fill="#2ee6c5"/>
+  <circle cx="300" cy="666" r="11" fill="#2ee6c5"/>
+  <circle cx="300" cy="666" r="22" fill="#2ee6c5" opacity=".3" filter="url(#soft)"/>
+
+  <!-- ===== ZONA INFERIOR: gráfica de crecimiento ===== -->
+  <rect x="50" y="690" width="500" height="170" rx="22" fill="#0b1128" stroke="#ffffff" stroke-opacity=".12"/>
+  <g stroke="#fff" stroke-opacity=".08">
+    <line x1="80" y1="735" x2="520" y2="735"/>
+    <line x1="80" y1="775" x2="520" y2="775"/>
+    <line x1="80" y1="815" x2="520" y2="815"/>
+  </g>
+  <g fill="url(#gBar)">
+    <rect x="96"  y="790" width="46" height="25" rx="8"/>
+    <rect x="164" y="775" width="46" height="40" rx="8"/>
+    <rect x="232" y="757" width="46" height="58" rx="8"/>
+    <rect x="300" y="739" width="46" height="76" rx="8"/>
+    <rect x="368" y="720" width="46" height="95" rx="8"/>
+    <rect x="436" y="702" width="46" height="113" rx="8"/>
+  </g>
+  <!-- línea de tendencia -->
+  <polyline points="119,774 187,758 255,739 323,722 391,703 459,684" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" opacity=".9"/>
+  <polygon points="459,670 484,684 459,698" fill="#fff" opacity=".9" transform="rotate(-20 459 684)"/>
+  <circle cx="119" cy="774" r="5" fill="#2ee6c5"/><circle cx="255" cy="739" r="5" fill="#2ee6c5"/><circle cx="391" cy="703" r="5" fill="#2ee6c5"/>
+</svg>
