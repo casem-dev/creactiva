@@ -114,19 +114,6 @@ form.addEventListener('submit', (e) => {
 
   if (!valid) return;
 
-  /*
-    AQUÍ conectaré el envío real:
-    1) Formspree / EmailJS / Web3Forms (sin backend), o
-    2) Mi propio backend (PHP, Node o Python) con fetch('/api/contacto', { method: 'POST', body: ... }).
-    Mientras tanto se abre el cliente de correo como solución provisional.
-  */
-  const subject = encodeURIComponent(`Solicitud de propuesta: ${nombre.value}`);
-  const body = encodeURIComponent(
-    `Nombre: ${nombre.value}\nEmail: ${email.value}\nTeléfono: ${telefono.value || '-'}\n\n${mensaje.value}`
-  );
-  window.location.href = `mailto:casem_a.dlr@proton.me?subject=${subject}&body=${body}`;
-
-  statusMsg.textContent = '¡Gracias! Se abrirá tu correo para enviar la solicitud.';
-  statusMsg.classList.add('ok');
-  form.reset();
+form.reset();
+window.location.assign('gracias.html');
 });
