@@ -124,7 +124,7 @@ form.addEventListener('submit', (e) => {
   const body = encodeURIComponent(
     `Nombre: ${nombre.value}\nEmail: ${email.value}\nTeléfono: ${telefono.value || '-'}\n\n${mensaje.value}`
   );
-  window.location.href = `mailto:info.agency@creactivamd.es?subject=${subject}&body=${body}`;
+  window.location.href = `mailto:casem_a.dlr@proton.me?subject=${subject}&body=${body}`;
 
   statusMsg.textContent = '¡Gracias! Se abrirá tu correo para enviar la solicitud.';
   statusMsg.classList.add('ok');
